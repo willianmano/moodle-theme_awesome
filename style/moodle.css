@@ -1,0 +1,80 @@
+.navbar {
+  color: #fff;
+  background-color: #009acf;
+  border: none;
+  border-radius: 0;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+#course-page #page-content #region-main {
+  padding: 0;
+}
+#page-course-view-onetopic .navbar {
+  margin-bottom: 0;
+}
+#course-page #page-content .course-content .single-section {
+  margin-top: 0;
+}
+#course-page #maincontent {
+  display: none;
+}
+.format-onetopic .onetopic .nav-tabs > li > a {
+  padding: 0;
+}
+.format-onetopic .onetopic .tab_content {
+  padding: 20px 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+.format-onetopic ul.nav-tabs > li {
+  border-bottom: 1px solid #474646;
+}
+.format-onetopic ul.nav-tabs > li > a {
+  border-radius: 0;
+}
+.format-onetopic .tabs-left {
+  padding-top: 2px;
+  border-bottom: none;
+}
+.format-onetopic .tabs-left > li {
+  float: none !important;
+}
+.format-onetopic .tabs-left > li > a {
+  display: block;
+  margin-right: 0 !important;
+}
+.format-onetopic .tabs-right > li > a {
+  margin-right: 0;
+}
+.icon-tab .fa,
+.icon-tab .icons,
+.icon-tab .glyphicon {
+  display: block;
+  padding: 0;
+  margin-bottom: 2px;
+  font-size: 24px;
+}
+#course-page .nav-tabs {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #3d3c3c;
+}
+#course-page .nav-tabs > li.active > a {
+  background-color: #424141;
+  border-left: 2px solid #009acf;
+}
+#course-page .nav-tabs > li > a:hover,
+#course-page .nav-tabs > li > a:focus {
+  background-color: #424141;
+}
+#course-page .nav-tabs > li > a {
+  color: #fff;
+  border: none;
+}
+/*# sourceMappingURL=/theme/awesome/style/moodle.css.map */
