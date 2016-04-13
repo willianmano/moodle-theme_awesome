@@ -46,7 +46,17 @@
   height: 100%;
   background-color: @tab-color;
   color: #fff;
-  // max-width: 109px;
+  max-width: 124px;
+}
+@media (min-width: 768px) {
+  #course-page .nav-tabs {
+      max-width: 100px;
+  }
+}
+@media (max-width: 767px) {
+  #course-page .nav-tabs {
+      max-width: 100%;
+  }
 }
 
 #course-page .nav-tabs > li.active > a {

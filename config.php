@@ -18,10 +18,17 @@ $THEME->layouts = array(
     // Main course page.
     'course' => array(
         'file' => 'course.php',
-        'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-pre',
+        'regions' => array('side-post'),
+        'defaultregion' => 'side-post',
         'options' => array('langmenu' => true),
-    )
+    ),
+    // The site home page.
+    // 'frontpage' => array(
+    //     'file' => 'columns1.php',
+    //     'regions' => array('side-pre', 'side-post'),
+    //     'defaultregion' => 'side-pre',
+    //     'options' => array('nonavbar' => true),
+    // ),
 );
 
 // $THEME->javascripts = array(

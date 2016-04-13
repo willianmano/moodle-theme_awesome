@@ -37,3 +37,6 @@ on the Moodle tracker</p>
 <li><a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap on Moodle docs</a></li>
 <li><a href="http://theming.sonsbeekmedia.nl/">Theme testing playground </a></li>
 </ul>';
+
+$string['logo'] = 'Logo';
+$string['logodesc'] = 'Top logo';
