@@ -34,7 +34,7 @@ class theme_awesome_core_renderer extends theme_bootstrap_core_renderer {
         // Caso esteja na pagina do curso vai imprimir as tabs com span2, caso contrario, vai imprimir normal
         $subtree = current($tabtree->subtree);
         if(isset($subtree) && strstr($subtree->id, 'tab_topic')) {
-            return html_writer::tag('ul', $firstrow, array('id' => 'tabs-menu', 'class' => 'nav nav-tabs collapse tabs-left col-md-2 col-lg-2 col-sm-12')) . $secondrow;
+            return html_writer::tag('ul', $firstrow, array('id' => 'tabs-menu', 'class' => 'nav nav-tabs navbar-collapse collapse tabs-left col-md-2 col-lg-2 col-sm-12')) . $secondrow;
         }
 
         return html_writer::tag('ul', $firstrow, array('class' => 'nav nav-tabs')) . $secondrow;
