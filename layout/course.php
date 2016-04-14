@@ -24,14 +24,8 @@ echo $OUTPUT->doctype() ?>
           <img src="<?php echo $CFG->wwwroot ?>/theme/awesome/pix/logo_negativa.png" alt="Awesome">
         </a>
       </div>
-      <div class="navbar-header col-md-10 col-sm-10 col-lg-10 pull-right">
-        <div id="moodle-navbar" class="navbar-collapse collapse navbar-right">
-            <?php echo $OUTPUT->user_menu(); ?>
-            <?php echo $OUTPUT->custom_menu(); ?>
-            <ul class="nav pull-right">
-                <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-            </ul>
-        </div>
+      <div class="navbar-header col-md-10 col-sm-10 col-lg-10">
+        <?php echo $OUTPUT->page_heading(); ?>
 
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tabs-menu">
             <span class="sr-only">Toggle navigation</span>
@@ -39,6 +33,14 @@ echo $OUTPUT->doctype() ?>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+      </div>
+
+      <div id="moodle-navbar" class="navbar-collapse collapse navbar-right">
+          <?php echo $OUTPUT->user_menu(); ?>
+          <?php echo $OUTPUT->custom_menu(); ?>
+          <ul class="nav pull-right">
+              <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
+          </ul>
       </div>
     </div>
 </nav>
