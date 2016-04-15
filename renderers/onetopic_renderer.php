@@ -17,7 +17,7 @@ class theme_awesome_format_onetopic_renderer extends format_onetopic_renderer {
      * @return string HTML to output.
      */
     protected final function start_section_list() {
-        return html_writer::start_tag('ul', array('class' => 'topics col-md-10 col-lg-10 col-sm-12'));
+        return html_writer::start_tag('ul', array('class' => 'topics col-md-10 col-sm-12'));
     }
 
     /**

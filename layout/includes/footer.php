@@ -1,13 +1,18 @@
-<footer id="page-footer">
-    <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-    <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
-    <?php
-    echo $OUTPUT->login_info();
-    echo $OUTPUT->home_link();
-    echo $OUTPUT->standard_footer_html();
-    ?>
+<footer id="page-footer" class="container-fluid">
+  <div class="row-fluid">
+        <div class="col-md-11">
+            <img src="<?php echo $CFG->wwwroot;?>/theme/awesome/pix/moodle-logo.svg" style="padding-top:10px">
+        </div>
+
+        <div class="col-md-1">
+            <div class="to-top-wrap">
+                <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div>
+    </div>
 </footer>
-<div id="madewithlove">
+
+<div id="madewithmoodle">
   <p>made with <i class="glyphicon glyphicon-heart"></i> by <a href="http://conecti.me">conecti.me</a></p>
 </div>
 

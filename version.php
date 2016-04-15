@@ -10,5 +10,5 @@ $plugin->component = 'theme_awesome';
 
 $plugin->dependencies = array(
     'format_onetopic'  => 2016020501,
-    'bootstrap' => 2015103000
+    'theme_bootstrap' => 2015103000
 );
