@@ -1,14 +1,106 @@
-.navbar {
-  color: #fff;
+/* Top navbar
+-------------------------*/
+header.navbar {
   background-color: #009acf;
-  border: none;
+  border: 0;
   border-radius: 0;
 }
-.navbar a {
+header.navbar .navbar-inner {
+  background-color: #009acf !important;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+header.navbar .navbar-inner .logo-wr {
+  float: left;
+  width: 100px;
+  width: 109px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0!important;
+  line-height: 80px;
+  text-align: center;
+  background: #3d3c3c;
+  border-bottom: 1px solid #474646;
+}
+header.navbar .navbar-inner .logo-wr .usermenu {
+  float: right;
+  min-width: 235px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+header.navbar .navbar-inner .logo-wr .usermenu .login {
+  line-height: 84px;
   color: #fff;
 }
-.navbar-default .navbar-brand {
+header.navbar .navbar-inner .logo-wr .usermenu .login a {
   color: #fff;
+}
+header.navbar .navbar-inner #courseheader {
+  display: inline-block;
+  margin-left: 20px;
+}
+header.navbar .navbar-inner #courseheader h1 {
+  margin: 20px 0 0 0;
+  font-size: 1.5em;
+  line-height: 20px;
+  color: #fff;
+}
+.navbar .navbar-inner .container-fluid {
+  padding: 0;
+}
+.moodle-actionmenu > ul > li {
+  display: list-item !important;
+}
+#action-menu-toggle-0 > span.avatars {
+  float: left;
+}
+.jsenabled .usermenu .moodle-actionmenu .toggle-display.textmenu {
+  height: 83px;
+  padding: 0;
+}
+.jsenabled .usermenu .moodle-actionmenu.show {
+  background-color: #009acf;
+}
+#action-menu-toggle-0 > span.avatars .avatar img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 12px 10px 0 0;
+  border-radius: 30px;
+}
+.dir-ltr .usermenu > .moodle-actionmenu > .menubar li a {
+  color: #fff;
+  text-align: left;
+}
+.dir-ltr .usermenu > .moodle-actionmenu > .menu {
+  left: 0;
+}
+.usermenu .moodle-actionmenu .toggle-display .userbutton {
+  margin-left: 5px;
+  line-height: 80px;
+}
+.jsenabled .usermenu .moodle-actionmenu .toggle-display .caret {
+  top: 25px;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px !important;
+  background: url([[pix:theme|arrow_down]]) no-repeat center right;
+  border: none;
+}
+#action-menu-toggle-0 > span.userbutton .usertext {
+  text-align: left;
+}
+#page #page-content {
+  padding-bottom: 40px;
+}
+#page-content #region-main-box .span9 {
+  margin-top: 20px;
 }
 .nav .open > a,
 .nav .open > a:hover,
@@ -47,34 +139,147 @@
   padding: 3px 0;
   margin: 0;
 }
-#region-blocks {
-  padding-right: 0;
+/* Blocks */
+#block-region-side-pre,
+#block-region-side-post {
+  margin-top: 20px;
 }
-#region-blocks .block-region .block {
+#block-region-side-pre .block,
+#block-region-side-post.blocks .block {
   margin-bottom: 10px;
   background-color: #fff;
   border: none;
-  border-radius: 0;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
-#region-blocks .block-region .block .header {
-  padding: 0;
+#block-region-side-pre .block .header h2,
+#block-region-side-post.blocks .block .header h2 {
+  color: #3d3c3c;
+}
+#block-region-side-pre .block .block_tree,
+#block-region-side-post.blocks .block .block_tree {
+  font-size: 14px;
+}
+.block_navigation .block_tree .tree_item,
+.block_settings .block_tree .tree_item {
+  margin: 5px 0;
+}
+.block {
+  padding-top: 0;
+  background: #f9f9f9;
+  border-color: #e9e9e9;
+  border-radius: 0;
+}
+.block .header {
   background: #fff;
   border-bottom: 1px solid #e9e9e9;
 }
-#region-blocks .block-region .block .header h2 {
-  padding: 18px;
+.block .header h2 {
+  padding: 10px 15px;
   font-size: 21px;
   font-weight: normal;
-  color: #3d3c3c;
+  color: #1b4d6a;
   text-transform: none;
 }
-#region-blocks .block-region .block .block_tree {
-  font-size: 14px;
+.block .header .block_action {
+  padding-top: 18px;
 }
-#region-blocks .block-region .block .block_tree .tree_item {
-  margin: 5px 0;
+.block .content {
+  padding: 10px 18px;
+}
+.block_tree {
+  font-size: 16px;
+}
+.block_navigation .block_tree .tree_item,
+.block_settings .block_tree .tree_item {
+  margin: 15px 0;
+  line-height: 25px;
+}
+.block_tree .tree_item a {
+  color: #656565;
+}
+.block_navigation .block_tree li.item_with_icon > p img,
+.block_navigation .block_tree .type_activity > p.tree_item.active_tree_node img,
+.block_navigation .block_tree li > p.hasicon img,
+.block_settings .block_tree li.item_with_icon > p img {
+  top: 5px;
+}
+.block_navigation .block_tree .tree_item.branch,
+.block_settings .block_tree .tree_item.branch {
+  background-position: 0 5px;
+}
+.jsenabled .block_navigation .block_tree .collapsed .tree_item.branch,
+.jsenabled .block_settings .block_tree .collapsed .tree_item.branch {
+  background-position: 0 5px;
+}
+.dir-rtl .block_navigation .block_tree .tree_item.branch,
+.dir-rtl .block_settings .block_tree .tree_item.branch {
+  background-position: right 5px;
+}
+.dir-rtl.jsenabled .block_navigation .block_tree .collapsed .tree_item.branch,
+.dir-rtl.jsenabled .block_settings .block_tree .collapsed .tree_item.branch {
+  background-position: right 5px;
+}
+.block_settings .adminsearchform input[type="submit"] {
+  margin-left: 0;
+}
+.block .calendar-controls {
+  padding: 12px 0 24px;
+}
+.block .calendar-controls .previous,
+.block .calendar-controls .next {
+  font-family: FontAwesome;
+  color: #656565;
+}
+.block .calendar-controls .previous:before {
+  content: "\f100";
+}
+.block .calendar-controls .next:after {
+  content: "\f101";
+}
+.block .calendar-controls .previous .arrow,
+.block .calendar-controls .next .arrow {
+  display: inline-block;
+  text-align: center;
+  text-indent: -999em;
+}
+.block .calendar-controls .previous {
+  text-align: right;
+}
+.dir-rtl .block .calendar-controls .previous {
+  text-align: left;
+}
+.block .calendar-controls .current a {
+  font-size: 16px;
+  color: #656565;
+}
+.block .calendar-controls .next {
+  text-align: left;
+}
+.dir-rtl .block .calendar-controls .next {
+  text-align: right;
+}
+.block .minicalendar th {
+  font-size: 12px;
+  font-weight: normal;
+}
+.block .minicalendar th abbr {
+  border-bottom: 0;
+}
+.block .minicalendar td {
+  font-size: 12px;
+}
+.block .minicalendar td a {
+  display: block;
+}
+.block .minicalendar .today a {
+  color: #fff;
+  background: #009acf;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .block_calendar_month .content,
+  .block .minicalendar td {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 body {
   background-color: #f0f0f0;

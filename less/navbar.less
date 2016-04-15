@@ -1,16 +1,141 @@
-.navbar {
-  border: none;
-  background-color: @main-color;
-  border-radius: @border-radius;
-  color: @white;
+// .navbar {
+//   border: none;
+//   background-color: @main-color;
+//   border-radius: @border-radius;
+//   color: @white;
+//
+//     a {
+//       color: @white;
+//     }
+// }
+//
+// .navbar-default {
+//   .navbar-brand {
+//     color: @white;
+//   }
+// }
 
-    a {
-      color: @white;
+/* Top navbar
+-------------------------*/
+header.navbar {
+    background-color: @main-color;
+    border-radius: 0;
+    border: 0;
+
+    .navbar-inner {
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+      background-image: none;
+      border: none;
+      background-color: #009ACF !important;
+
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+
+      .logo-wr {
+        background: #3D3C3C;
+        box-sizing: border-box;
+        width: 100px;
+        margin: 0!important;
+        text-align: center;
+        line-height: 80px;
+        float: left;
+        border-bottom: 1px solid #474646;
+        width: 109px;
+
+        .usermenu {
+          float: right;
+          margin: 0;
+          min-width: 235px;
+          box-sizing: border-box;
+
+          .login {
+            line-height: 84px;
+            color: #FFFFFF;
+
+            a {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+
+      #courseheader {
+        margin-left: 20px;
+        display: inline-block;
+      }
+
+      #courseheader h1 {
+        color: #FFF;
+        margin: 20px 0 0 0;
+        font-size: 1.5em;
+        line-height: 20px;
+      }
     }
 }
 
-.navbar-default {
-  .navbar-brand {
-    color: @white;
-  }
+.navbar .navbar-inner .container-fluid {
+  padding: 0;
+}
+
+.moodle-actionmenu > ul > li {
+  display: list-item !important;
+}
+
+#action-menu-toggle-0 > span.avatars {
+  float: left;
+}
+
+.jsenabled .usermenu .moodle-actionmenu .toggle-display.textmenu {
+  padding: 0;
+  height: 83px;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show {
+    background-color: #009ACF;
+}
+
+#action-menu-toggle-0 > span.avatars .avatar  img {
+  width: 60px;
+  height: 60px;
+  margin: 12px 10px 0 0;
+  display: block;
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.dir-ltr .usermenu>.moodle-actionmenu>.menubar li a {
+  text-align: left;
+  color: #fff;
+}
+.dir-ltr .usermenu>.moodle-actionmenu>.menu {
+  left: 0;
+}
+
+.usermenu .moodle-actionmenu .toggle-display .userbutton {
+  line-height: 80px;
+  margin-left: 5px;
+}
+
+.jsenabled .usermenu .moodle-actionmenu .toggle-display .caret {
+  margin-left: 10px !important;
+  top: 25px;
+  background: url([[pix:theme|arrow_down]]) no-repeat center right;
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+#action-menu-toggle-0 > span.userbutton .usertext {
+  text-align: left;
+}
+#page #page-content {
+  padding-bottom: 40px;
+}
+#page-content #region-main-box .span9 {
+  margin-top: 20px;
 }

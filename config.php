@@ -20,7 +20,7 @@ $THEME->layouts = array(
         'file' => 'course.php',
         'regions' => array('side-post'),
         'defaultregion' => 'side-post',
-        'options' => array('langmenu' => true),
+        'options' => array('langmenu' => false),
     ),
     // The site home page.
     // 'frontpage' => array(
